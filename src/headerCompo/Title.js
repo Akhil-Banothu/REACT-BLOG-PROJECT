@@ -1,6 +1,6 @@
 import './Title.css';
 
-function Title() {
+function TitleCompo() {
    return (
       <header>
          <h1 className="title">
@@ -11,4 +11,4 @@ function Title() {
    );
 }
 
-export default Title;
+export default TitleCompo;

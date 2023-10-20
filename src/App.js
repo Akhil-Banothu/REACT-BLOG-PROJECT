@@ -1,12 +1,13 @@
 import './App.css';
-import Title from './headerCompo/Title';
+import FooterComp from './FooterCompo/FooterCompo';
 import Navbar from './NavigationCompo/Navbar';
+import TitleCompo from './headerCompo/Title';
 
 function App() {
   return (
     <div className="App">
-      <Title/>
-      <Navbar/>
+      <TitleCompo />
+      <Navbar />
     </div>
   );
 }

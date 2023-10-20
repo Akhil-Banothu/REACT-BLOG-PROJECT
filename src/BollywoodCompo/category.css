@@ -2,7 +2,7 @@
    width: 80%;
    margin: 60px auto;
    display: grid;
-   grid-template-columns: 60% 40%;
+   grid-template-columns: 60% 35%;
    gap: 30px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .innerbox {
-   width: 75%;
+   width: 40%;
 }
 
 .articleTitle {
@@ -99,6 +99,7 @@
    margin-top: 10px;
 }
 
+
 .number {
    text-align: right;
    width: 10%;
@@ -106,6 +107,33 @@
    font-weight: 700;
    color: #F0F0F0;
    padding-left: 50px;
+}
+
+/* top posts number 2 category */
+
+.innbox2 {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.box3 {
+   margin-top: 20px;
+}
+
+.author3 {
+   margin: 20px 0px 10px;
+   font-size: 13px;
+}
+
+.advertisement {
+   margin: 20px auto;
+   width: 90%;
+}
+
+.advertisement img {
+   width: 100%;
+   height: 600px;
 }
 
 @media screen and (max-width: 400px) {

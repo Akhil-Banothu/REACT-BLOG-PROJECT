@@ -7,13 +7,14 @@ import "./Navbar.css";
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import ArticleStore from "../ArticleCompo/Articles";
 import DynamicCompo from "../ArticleCompo/DynamicArticle";
+import FooterComp from "../FooterCompo/FooterCompo";
 
 
 function Navbar() {
 
-   function hideNavBar(){
+   function hideNavBar() {
       let value = true;
-      if(value === true) {
+      if (value === true) {
          value = false;
       }
       else {
@@ -37,7 +38,7 @@ function Navbar() {
 
                <ul>
                   <li>
-                     <NavLink className='link' to="/home">Home</NavLink>
+                     <NavLink className='link' to="/">Home</NavLink>
                   </li>
 
                   <li>
@@ -72,10 +73,12 @@ function Navbar() {
                   <Route path="/hollywood" element={<Hollywood />} />
                   <Route path="/fitness" element={<Fitness />} />
                   <Route path="/food" element={<Food />} />
-                  <Route path="/article/:id" element={<DynamicCompo />}/>
+                  <Route path="/article/:id" element={<DynamicCompo />} />
                </Routes>
             </ArticleStore>
+            <FooterComp />
          </BrowserRouter>
+
       </section>
 
 

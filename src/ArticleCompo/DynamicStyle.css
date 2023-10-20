@@ -1,0 +1,43 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+.dynamic-component {
+   width: 45%;
+   margin: 50px auto;
+   font-size: 28px;
+}
+
+.dynamic-heading {
+   text-align: left;
+}
+
+.dynamic-author {
+   width: 20%;
+   margin: 50px 0px;
+   display: block;
+}
+
+.dynamic-image {
+   width: 100%;
+   margin: 20px auto;
+   border-radius: 10px;
+}
+
+.dynamic-description {
+   text-align: left;
+   margin: 20px 0px 40px;
+   font-size: 22px;
+}
+
+.dynamic-button {
+   width: 20%;
+   margin: 0px auto 50px;
+   border: none;
+   background-color: black;
+   color: white;
+   padding: 20px;
+   font-size: 18px;
+}
