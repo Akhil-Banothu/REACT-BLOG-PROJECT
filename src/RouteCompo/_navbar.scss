@@ -1,0 +1,101 @@
+.navbar {
+  z-index: 999;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+
+  a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    font-size: 22px;
+    padding: 15px;
+    color: black;
+    border-radius: 15px;
+  }
+
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+  a:not(.active):hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.navbar-line {
+  width: 90%;
+  margin: auto;
+  border: 2px solid #f0f0f0;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0px;
+
+    a {
+      width: 90%;
+      font-size: 20px;
+    }
+  }
+
+  .open {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+
+@media  screen and (min-width: 576px) and (max-width: 768px)  {
+  .navbar {
+    width: 95%;
+
+    a {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media  screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar {
+    width: 95%;
+
+    a {
+      font-size: 23px;
+    }
+  }
+}
+
+@media  screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar {
+    width: 95%;
+
+    a {
+      font-size: 27px;
+    }
+  }
+}
+
+@media  screen and (min-width: 1200px) and (max-width: 1400px){
+  .navbar {
+    width: 95%;
+
+    a {
+      font-size: 35px;
+    }
+  }
+}

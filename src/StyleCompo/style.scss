@@ -1,0 +1,13 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: cursive;
+   box-sizing: border-box;
+}
+
+@import "../HeadingCompo/headingstyle";
+@import '../RouteCompo/navbar';
+@import '../MainComponents/articlestyle';
+@import "../DynamicArticle/dynamicarticle";
+@import "../MainComponents/homestyle";
+@import "../FooterCompo/footerstyle";

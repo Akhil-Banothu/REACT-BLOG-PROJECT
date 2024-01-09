@@ -1,0 +1,719 @@
+.main-article {
+  width: 50%;
+  margin: 50px auto;
+  display: block;
+  text-align: left;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .author-details,
+  .author-details2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+
+    .author {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 30px;
+
+      .author-image {
+        background-image: url("./Images/MaskGroup.png");
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+      }
+
+      .author-name {
+        line-height: 40px;
+        h4 {
+          font-size: 22px;
+        }
+        p {
+          color: #a2a2a2;
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 10px;
+
+      .common {
+        display: block;
+        font-size: 30px;
+        color: #a2a2a2;
+      }
+    }
+  }
+
+  .article-image {
+    width: 100%;
+    border-radius: 15px;
+    height: 600px;
+  }
+
+  .paragraph {
+    font-size: 22px;
+    margin: 50px 0px;
+    line-height: 35px;
+  }
+
+  .article-share {
+    z-index: -1;
+
+    position: fixed;
+    top: 600px;
+    left: 100px;
+
+    .share {
+      display: flex;
+      align-items: center;
+      margin: 30px 0px;
+      color: #939393;
+      gap: 50px;
+
+      .text {
+        font-size: 20px;
+      }
+      .share-image1 {
+        background-image: url("./Images/rythm.png");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+
+      .share-image2 {
+        background-image: url("./Images/share.png");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .author-details2 {
+    border: solid #a2a2a2;
+    border-width: 1px 0px;
+    padding: 30px 0px;
+  }
+}
+
+.btn-back {
+  padding: 20px 100px;
+  font-size: 22px;
+  margin: 100px 0px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.related-articles {
+  z-index: 99;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 80px 150px;
+  text-align: left;
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .article-decoration {
+    border: 2px solid #f0f0f0;
+    margin: 30px 0px;
+    width: 100%;
+  }
+
+  .box2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+
+    .more-articles {
+      width: 30%;
+
+      h4 {
+        font-size: 20px;
+      }
+
+      .nav-seperate {
+        text-decoration: none;
+        color: black;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 15px;
+        margin: 25px 0px;
+        height: 300px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .author {
+        display: flex;
+        margin: 20px 0px;
+        gap: 20px;
+        align-items: flex-end;
+        line-height: 30px;
+
+        .author-image {
+          background-image: url("./Images/MaskGroup.png");
+          background-size: cover;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-article {
+    width: 90%;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .author-details,
+    .author-details2 {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      gap: 40px;
+
+      .author {
+        width: 90%;
+
+        .author-image {
+          width: 80px;
+          height: 80px;
+        }
+
+        .author-name {
+          h4 {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .icons {
+        width: 90%;
+      }
+    }
+
+    .article-image {
+      width: 100%;
+      margin: auto;
+      height: 400px;
+    }
+
+    .paragraph {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .author-details2 .author .author-image {
+      width: 90px;
+      height: 90px;
+    }
+
+    .author-details2 .author .author-name {
+      line-height: 30px;
+    }
+
+    .article-share {
+      display: none;
+    }
+  }
+
+  .btn-back {
+    margin: 20px 0px;
+    font-size: 20px;
+  }
+
+  .related-articles {
+    padding: 30px 0px;
+    width: 90%;
+    margin: 30px auto;
+
+    h3 {
+      font-size: 23px;
+    }
+
+    .box2 {
+      flex-wrap: wrap;
+
+      .more-articles {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .nav-seperate {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+
+          img {
+            width: 30%;
+            margin: 0px;
+            height: 120px;
+          }
+
+          .box3 {
+            width: 70%;
+
+            h2 {
+              font-size: 18px;
+            }
+
+            .author {
+              margin: 10px;
+
+              .author-image {
+                width: 50px;
+                height: 50px;
+              }
+
+              .author-name {
+                line-height: 20px;
+                margin: 10px;
+
+                h4 {
+                  font-size: 14px;
+                  display: block;
+                }
+
+                p {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      h4 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .main-article {
+    width: 90%;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .author-details,
+    .author-details2 {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      gap: 40px;
+
+      .author {
+        width: 90%;
+
+        .author-image {
+          width: 80px;
+          height: 80px;
+        }
+
+        .author-name {
+          h4 {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .icons {
+        width: 90%;
+      }
+    }
+
+    .article-image {
+      width: 100%;
+      margin: auto;
+    }
+
+    .paragraph {
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    .author-details2 .author .author-image {
+      width: 90px;
+      height: 90px;
+    }
+
+    .author-details2 .author .author-name {
+      line-height: 30px;
+    }
+
+    .article-share {
+      display: none;
+    }
+  }
+
+  .btn-back {
+    margin: 20px 0px;
+    font-size: 20px;
+  }
+
+  .related-articles {
+    padding: 30px 0px;
+    width: 90%;
+    margin: 30px auto;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .box2 {
+      flex-wrap: wrap;
+
+      .more-articles {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .nav-seperate {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+
+          img {
+            width: 30%;
+            margin: 0px;
+            height: 120px;
+          }
+
+          .box3 {
+            width: 70%;
+
+            h2 {
+              font-size: 22px;
+            }
+
+            .author {
+              margin: 10px;
+
+              .author-image {
+                width: 50px;
+                height: 50px;
+              }
+
+              .author-name {
+                line-height: 20px;
+                margin: 10px;
+
+                h4 {
+                  font-size: 18px;
+                  display: block;
+                }
+
+                p {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      h4 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .main-article {
+    width: 90%;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .author-details,
+    .author-details2 {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 40px;
+
+      .author {
+        width: 90%;
+
+        .author-image {
+          width: 80px;
+          height: 80px;
+        }
+
+        .author-name {
+          h4 {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .icons {
+        width: 90%;
+      }
+    }
+
+    .article-image {
+      width: 100%;
+      margin: auto;
+    }
+
+    .paragraph {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    .author-details2 .author {
+      .author-image {
+        width: 90px;
+        height: 90px;
+      }
+
+      .author-name {
+        line-height: 30px;
+      }
+    }
+
+    .article-share {
+      display: none;
+    }
+  }
+
+  .btn-back {
+    margin: 20px 0px;
+    font-size: 20px;
+  }
+
+  .related-articles {
+    padding: 30px 0px;
+    width: 90%;
+    margin: 30px auto;
+
+    h3 {
+      font-size: 27px;
+    }
+
+    .box2 {
+      flex-wrap: wrap;
+
+      .more-articles {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .nav-seperate {
+          border: solid #f0f0f0;
+          border-width: 0px 0px 3px 0px;
+          padding: 20px 0px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+
+          img {
+            width: 35%;
+            margin: 0px;
+            height: 200px;
+          }
+
+          .box3 {
+            width: 70%;
+
+            h2 {
+              font-size: 24px;
+            }
+
+            .author {
+              margin: 10px;
+
+              .author-image {
+                width: 60px;
+                height: 60px;
+              }
+
+              .author-name {
+                line-height: 20px;
+                margin: 10px;
+
+                h4 {
+                  font-size: 20px;
+                  display: block;
+                }
+
+                p {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      h4 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main-article {
+    width: 90%;
+
+    h2 {
+      font-size: 35px;
+    }
+
+    .author-details,
+    .author-details2 {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 40px;
+
+      .author {
+        width: 90%;
+
+        .author-image {
+          width: 100px;
+          height: 100px;
+        }
+
+        .author-name {
+          h4 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .icons {
+        width: 90%;
+
+        .common {
+          font-size: 40px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .article-image {
+      width: 100%;
+      margin: auto;
+    }
+
+    .paragraph {
+      font-size: 32px;
+      line-height: 50px;
+    }
+
+    .author-details2 .author {
+      .author-image {
+        width: 100px;
+        height: 100px;
+      }
+
+      .author-name {
+        line-height: 40px;
+      }
+    }
+
+    .article-share {
+      display: none;
+    }
+  }
+
+  .btn-back {
+    margin: 20px 0px;
+    font-size: 25px;
+  }
+
+  .related-articles {
+    padding: 30px 0px;
+    width: 90%;
+    margin: 30px auto;
+
+    h3 {
+      font-size: 35px;
+    }
+
+    .box2 {
+      flex-wrap: wrap;
+
+      .more-articles {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .nav-seperate {
+          border: solid #f0f0f0;
+          border-width: 0px 0px 3px 0px;
+          padding: 20px 0px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+
+          img {
+            width: 35%;
+            margin: 0px;
+          }
+
+          .box3 {
+            width: 70%;
+
+            h2 {
+              font-size: 30px;
+            }
+
+            .author {
+              margin: 20px;
+
+              .author-image {
+                width: 80px;
+                height: 80px;
+              }
+
+              .author-name {
+                line-height: 25px;
+                margin: 10px;
+
+                h4 {
+                  font-size: 25px;
+                  display: block;
+                }
+
+                p {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      h4 {
+        display: none;
+      }
+    }
+  }
+}

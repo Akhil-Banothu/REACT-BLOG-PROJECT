@@ -1,0 +1,79 @@
+$colorblack: black;
+
+@mixin gridCenter {
+  display: grid;
+  place-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  padding: 60px;
+  padding-bottom: 30px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  word-spacing: -50px;
+
+  .head {
+    display: block;
+    font-size: 30px;
+    transform: rotate(-90deg);
+    height: 64px;
+    position: relative;
+    right: -10px;
+    top: 15px;
+    font-weight: 100;
+  }
+}
+
+.menu {
+  width: 5%;
+  @include gridCenter;
+  display: none;
+
+  .burger {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: $colorblack;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+
+  h1 {
+    width: 40%;
+    padding: 0px;
+    font-size: 40px;
+
+    .head {
+      font-size: 20px;
+      top: 0px;
+      left: 15px;
+    }
+  }
+
+  .menu {
+    width: 10%;
+    height: 30px;
+    @include gridCenter;
+
+    .burger {
+      height: 5px;
+      border-radius: 5px;
+      background-color: gray;
+    }
+  }
+}
